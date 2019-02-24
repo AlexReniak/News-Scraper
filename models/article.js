@@ -14,10 +14,10 @@ const ArticleSchema = new Schema({
   },
   note: {
     type: Schema.Types.ObjectId,
-    ref: "notes"
+    ref: "note"
   }
 });
 
-const Article = mongoose.model("Article", ArticaleSchema);
+const Article = mongoose.model("Article", ArticleSchema);
 
 module.exports = Article;

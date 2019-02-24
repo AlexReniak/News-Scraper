@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const NotesSchema = new Schema({
+const NoteSchema = new Schema({
 
   title: String,
 
@@ -10,6 +10,6 @@ const NotesSchema = new Schema({
 
 });
 
-const Notes = mongoose.model("Notes", NotesSchema);
+const Note = mongoose.model("Note", NoteSchema);
 
-module.exports = Notes;
+module.exports = Note;
