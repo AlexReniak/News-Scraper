@@ -6,30 +6,32 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-<title>News Articles</title>
+<title>Scrape Articles</title>
 </head>
 <body>
 
-  <div class="jumbotron jumbotron-fluid bg-primary text-light">
-    <div class="container text-center">
-      <h2>Recent News</h2>
+  <div class="jumbotron jumbotron-fluid bg-primary text-light text-center">
+    <div class="container-fluid">
+      <h2>Read the News</h2>
     </div>
+    
   </div>
 
-  <div class="container">
-  <div class="row text-center">
-    <div class="col-4"> 
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
       <h4><a id="article-link" href="#" target="_blank">Click an article to see title</a></h4>
       <form>
         <h5>Leave a note</h5>
         <input type="text" class="form-control" id="note-title">
-        <textarea name="note" id="note-body" class="form-control my-3" cols="30" rows="10"></textarea>
+        <textarea name="note" id="note-body" class="form-control" cols="30" rows="10"></textarea>
         <button class="btn btn-block btn-success" id="submit-note">Submit Note</button>
       </form>
     </div>
     <div class="col-8 text-center">
-      <h4>Articles</h4>
+      <h4>View Articles</h4>
       <ul class="list-group" id="articles">
+
       </ul>
     </div>
   </div>
@@ -38,6 +40,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
