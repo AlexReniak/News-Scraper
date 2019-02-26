@@ -14,7 +14,7 @@ const ArticleSchema = new Schema({
   },
   note: {
     type: Schema.Types.ObjectId,
-    ref: "note"
+    ref: "Note"
   }
 });
 

@@ -25,20 +25,21 @@ mongoose.connect("mongodb://localhost/newsScraper", { useNewUrlParser: true });
 
 // Route to scrape website for data
 app.get("/scrape", function (req, res) {
-  axios.get("https://www.cnet.com/news/").then(function (response) {
+  axios.get("http://www.echojs.com/").then(function (response) {
     const $ = cheerio.load(response.data);
     const articleArr = [];
-    $(".row .asset").each(function (i, element) {
+    $("article h2").each(function (i, element) {
       const result = {};
 
       result.title = $(this)
-        .children(".articleTitle")
+        .children("a")
         .text();
       result.link = $(this)
         .children("a")
         .attr("href");
 
       console.log(result.title)
+      console.log(result.link)
       articleArr.push(result);
      
     });
